@@ -40,7 +40,7 @@ const StudentDashboard = () => {
         return;
       }
 
-      const response = await API.get("/dashboard", {
+      const response = await API.get("/api/dashboard", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
