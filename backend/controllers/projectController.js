@@ -32,15 +32,15 @@ const uploadProject = async (req, res) => {
       message: "Project uploaded successfully",
       project,
     });
-  } catch (error) {
-    console.error("Upload Project Error:", error);
+  } } catch (error) {
+  console.error("Upload Project Error:", error);
 
-    res.status(500).json({
-      success: false,
-      message: "Project upload failed",
-      error: error.message,
-    });
-  }
+  return res.status(500).json({
+    success: false,
+    message: "Project upload failed",
+    error: error.message,
+  });
+}
 };
 
 // ===============================
