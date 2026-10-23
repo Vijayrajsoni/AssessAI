@@ -1,0 +1,248 @@
+/* =========================================
+   ASSESSAI STUDENT SIDEBAR
+========================================= */
+
+.student-sidebar {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
+  width: 220px;
+  height: 100vh;
+
+  background: #25144f;
+
+  color: white;
+
+  padding: 24px 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1000;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.sidebar-logo {
+  display: flex;
+
+  align-items: center;
+
+  
+margin-bottom: 35px;
+}
+
+.sidebar-logo img {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 9px;
+
+  object-fit: cover;
+}
+
+.sidebar-brand {
+  display: flex;
+
+  align-items: center;
+}
+
+.sidebar-brand span {
+  font-size: 21px;
+
+  font-weight: 600;
+}
+
+.sidebar-brand strong {
+  color: #a78bfa;
+
+  font-size: 21px;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.sidebar-menu {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.sidebar-menu-item {
+  width: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  color: #c9c0dd;
+
+  padding: 13px 14px;
+
+  border-radius: 7px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  text-align: left;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.sidebar-menu-item:hover {
+  background: #382363;
+
+  color: white;
+}
+
+.sidebar-menu-item.active {
+  background: #6d4aff;
+
+  color: white;
+}
+
+
+/* ICON */
+
+.sidebar-menu-icon {
+  width: 27px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 23px;
+}
+
+
+/* TEXT */
+
+.sidebar-menu-text {
+  font-size: 18px;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.sidebar-bottom {
+  margin-top:90px;
+}
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.sidebar-logout {
+  width: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  color: #c9c0dd;
+
+  padding: 15px 14px;
+
+  border-radius: 7px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  font-size: 18px;
+
+  text-align: left;
+}
+
+.sidebar-logout:hover {
+  background: #382363;
+
+  color: white;
+}
+
+.sidebar-logout span {
+  font-size: 18px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .student-sidebar {
+    width: 70px;
+
+    padding: 20px 8px;
+  }
+
+  .sidebar-logo {
+    justify-content: center;
+
+    padding: 0;
+  }
+
+  .sidebar-brand {
+    display: none;
+  }
+
+  .sidebar-menu-item {
+    justify-content: center;
+
+    padding: 13px 5px;
+  }
+
+  .sidebar-menu-text {
+    display: none;
+  }
+
+  .sidebar-menu-icon {
+    font-size: 20px;
+  }
+
+  .sidebar-help {
+    justify-content: center;
+
+    padding: 8px;
+  }
+
+  .sidebar-help > div:last-child {
+    display: none;
+  }
+
+  .sidebar-logout {
+    justify-content: center;
+
+    padding: 12px 5px;
+  }
+
+  .sidebar-logout {
+    font-size: 0;
+  }
+
+  .sidebar-logout span {
+    font-size: 20px;
+  }
+}
