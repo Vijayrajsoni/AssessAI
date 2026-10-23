@@ -50,9 +50,9 @@ router.get(
       }
     );
 
-    res.redirect(
-      `http://localhost:5173/oauth-success?token=${token}`
-    );
+   res.redirect(
+  `https://assessai-f.onrender.com/oauth-success?token=${token}`
+);
   }
 );
 
