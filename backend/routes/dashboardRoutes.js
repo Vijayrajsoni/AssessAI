@@ -8,6 +8,6 @@ const {
 
 const router = express.Router();
 
-router.get("https://assessai-b.onrender.com/api/dashboard", protect, getDashboard);
+router.get("/", protect, getDashboard);
 
 module.exports = router;
